@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
+}
