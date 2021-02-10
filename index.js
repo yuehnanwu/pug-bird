@@ -1,12 +1,14 @@
 /**
  * Module dependencies.
  */
-var escapeHtml = require('escape-html')
-var express = require('express')
-var fs = require('fs')
-var path = require('path')
+const express = require('express')
+const path = require('path')
+/**
+ * Constant announcements
+ */
+const PORT = process.env.PORT || 5000
 
-var app = (module.exports = express())
+const app = (module.exports = express())
 
 // register .md as an engine in express view system
 app.use('/static', express.static(path.join(__dirname, 'static')))
@@ -26,6 +28,6 @@ app.get('/fail', function (req, res) {
 
 /* istanbul ignore next */
 if (!module.parent) {
-  app.listen(3000)
-  console.log('Express started on port 3000')
+  app.listen(PORT)
+  console.log(`Express started on port ${PORT}`)
 }

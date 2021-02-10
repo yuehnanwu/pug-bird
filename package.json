@@ -12,5 +12,16 @@
   },
   "engines": {
     "node": "12.x"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuehnanwu/pug-bird.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+    "pug"
+  ],
+  "license": "MIT"
 }
